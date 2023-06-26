@@ -1,0 +1,37 @@
+.notification {
+  position: absolute;
+  right: -1em;
+  top: -1em;
+  min-width: 1.5em;
+  height: 1.5em;
+  border-radius: 1.5em;
+  background-color: red;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.mailbox {
+  position: relative;
+  display: inline-block;
+  font-size: 20px;
+  line-height: 2.5em;
+}
+.counter {
+  font-size: 0.7em;
+}
+
+.inbox-card {
+  flex: 1 1;
+}
+.inbox-card > .mat-card-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.mat-card {
+  background: none;
+}

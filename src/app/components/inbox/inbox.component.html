@@ -1,0 +1,28 @@
+<mat-card class="inbox-card">
+  <mat-card-content>
+    <div class="mailbox">
+      <mat-icon class="inbox-icon">mail_outline </mat-icon>
+      <span *ngIf="isInboxRunning" class="notification">
+        <span class="counter"> {{ inboxValue }} </span>
+      </span>
+    </div>
+  </mat-card-content>
+  <mat-card-content>
+    <button
+      mat-raised-button
+      color="primary"
+      (click)="startFetchingInbox()"
+      [disabled]="isInboxRunning"
+    >
+      Start Receiving
+    </button>
+
+    <button
+      mat-raised-button
+      (click)="stopFethchingInbox()"
+      [disabled]="!isInboxRunning"
+    >
+      Stop Receiving
+    </button>
+  </mat-card-content>
+</mat-card>
